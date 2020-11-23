@@ -22,6 +22,7 @@ export const HomeHeader = styled.nav`
     display: flex;
     flex-direction: row;
     grid-column: 2/3;
+    grid-gap: 0;
     height: 100%;
     & button {
         width: max-content;
@@ -46,7 +47,7 @@ export const MainPageCaptivatingWrapper = styled.div`
 
     .caption {
        background-color: #3f51b5;
-        background-image: linear-gradient(90deg, #3f51b5, #9c27b0);
+        background-image: linear-gradient(65deg, #3f51b5, #9c27b0);
         background-size: 100%;
         background-clip: text;
         -webkit-background-clip: text;
@@ -56,7 +57,7 @@ export const MainPageCaptivatingWrapper = styled.div`
     }
 
     & img {
-        width: 50vw;
+        width: 40vw;
         justify-self: center;
         padding: 1.5em;
     }
@@ -66,9 +67,9 @@ export const MainPageCaptivatingWrapper = styled.div`
         flex-direction: row;
         padding: 1.5rem;
 
-        & img{
-            width: 12.5vw;
-            height: 25vh;
+        & img {
+            width: 9vw;
+            height: 20vh;
         }
     }
 `
@@ -93,24 +94,40 @@ export const AvailableOffer = styled.div`
     padding: 1.5em;
     color: white;
     width: fit-content;
-    height: 90%;
+    height: 80%;
     width: 40%;
     background: linear-gradient(0deg, rgba(255, 105, 180, 0.85), rgba(135, 206, 235 ,0.85));
     transform: translate(5vw, 5vh);
 
+    .pText{
+        align-self: center;
+    }
 
-    & .awards {
+    .awards {
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-around;
-        transform: translateY(-7vh);
+        align-self: flex-end;
         
         img {
-            height: 5vw;
-            width: 7vw;
-
-
+            height: 8vw;
+            width: 12vw;
+            padding: 1em;
         }
+    }
+
+    button {
+        color: sandybrown;
+        width: fit-content;
+        height: fit-content;
+        justify-items: end;
+        position: relative;
+        align-self: flex-end;
+    }
+
+    button:hover {
+        background-color: #8133ee;
+        color: white;
     }
 `
