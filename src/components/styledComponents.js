@@ -30,13 +30,6 @@ export const HomeHeader = styled.nav`
     }
 `
 
-
-export const NavButton = styled.button`
-    width: max-content;
-    height: fit-content;
-    padding: 1em;
-`
-
 export const MainPageCaptivatingWrapper = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -44,9 +37,13 @@ export const MainPageCaptivatingWrapper = styled.div`
     background-color: snow;
     padding-top: 10vh;
     color: pink;
+    padding-left: 5em;
+    padding-right: 5em;
 
     .caption {
-       background-color: #3f51b5;
+        background-color: #3f51b5;
+        padding: 0.5em;
+        padding-bottom: 0;
         background-image: linear-gradient(65deg, #3f51b5, #9c27b0);
         background-size: 100%;
         background-clip: text;
@@ -68,8 +65,8 @@ export const MainPageCaptivatingWrapper = styled.div`
         padding: 1.5rem;
 
         & img {
-            width: 9vw;
-            height: 20vh;
+            width: 12vw;
+            height: 23vh;
         }
     }
 `
@@ -108,17 +105,16 @@ export const AvailableOffer = styled.div`
         flex-direction: row;
         align-items: center;
         justify-content: space-around;
-        align-self: flex-end;
         
         img {
-            height: 8vw;
+            height: 10vw;
             width: 12vw;
             padding: 1em;
         }
     }
 
     button {
-        color: sandybrown;
+        color: black;
         width: fit-content;
         height: fit-content;
         justify-items: end;
@@ -129,5 +125,69 @@ export const AvailableOffer = styled.div`
     button:hover {
         background-color: #8133ee;
         color: white;
+    }
+`
+
+export const ProcessWrapper = styled.div`
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 3fr;
+    grid-column-gap: 1em;
+    text-align: center;
+    color: blue;
+
+    div {
+        background: snow;
+        border-radius: 3%;
+        padding: 0.25em;
+        
+    }
+
+    h5 {
+        color: blue;
+    }
+    .processText {
+        color: darkgrey;
+    }
+`
+
+export const FooterWrapper = styled.div`
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: minmax(auto, 1fr);
+    color: white;
+    background: linear-gradient(365deg, blue, purple);
+`
+
+
+export const ModalWrapper = styled.div`
+    position: absolute;
+    width: 80%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border-top: solid orange 5px;
+    background-color: snow;
+    margin-left: 10%;
+    z-index: 1;
+    visibility: hidden;
+    transform: translateY(20%);
+    padding: 1em;
+    grid-column-gap: 1em;
+    justify-content: space-around;
+    
+    div {
+        padding-bottom: 1em;
+
+        .longSub-title {
+            width: max-content;
+            border-bottom: solid orange 3px;
+
+        }
+    }
+
+    .sub-title {
+        border-bottom: solid orange 3px;
+        width: 100%;
     }
 `

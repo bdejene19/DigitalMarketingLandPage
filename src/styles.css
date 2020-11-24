@@ -4,3 +4,21 @@
     padding: 0;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
+body {
+    height: 100vh;
+    border: solid black 3px;
+
+}
+
+.content-wrapper {
+    width: 100%;
+    height: 50%;
+    overflow-y: scroll;
+    border: solid green 2px;
+}
+
+section {
+    scroll-snap-align: center;
+}
+
