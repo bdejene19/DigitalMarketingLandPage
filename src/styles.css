@@ -7,16 +7,11 @@
 
 body {
     height: 100vh;
-    border: solid black 3px;
+    width: 100vw;
 
 }
 
-.content-wrapper {
-    width: 100%;
-    height: 50%;
-    overflow-y: scroll;
-    border: solid green 2px;
-}
+
 
 section {
     scroll-snap-align: center;

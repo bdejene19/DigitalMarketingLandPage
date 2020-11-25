@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const HomePageWrapper = styled.div`
+    
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     grid-template-rows: 1fr;
@@ -8,13 +9,17 @@ export const HomePageWrapper = styled.div`
     grid-auto-columns:minmax(100px, auto);
     background-color: snow;
     .navImg {
-        width: 25vw;
+        width: 20vw;
         height: 18vh;
     }
 
     .marketingImage {
         width: 33vw;
         grid-column: 3/4
+    }
+
+    a {
+        text-decoration: none;
     }
 `
 
@@ -28,6 +33,8 @@ export const HomeHeader = styled.nav`
         width: max-content;
         margin: 1em;
     }
+
+  
 `
 
 export const MainPageCaptivatingWrapper = styled.div`
@@ -91,11 +98,11 @@ export const AvailableOffer = styled.div`
     padding: 1.5em;
     color: white;
     width: fit-content;
-    height: 80%;
+    height: 90%;
     width: 40%;
-    background: linear-gradient(0deg, rgba(255, 105, 180, 0.85), rgba(135, 206, 235 ,0.85));
-    transform: translate(5vw, 5vh);
-
+    background: linear-gradient(200deg, rgba(0, 0, 225, 0.85), rgba(148, 0, 221, 0.85));
+    transform: translate(5vw, 8vh);
+    
     .pText{
         align-self: center;
     }
@@ -114,28 +121,29 @@ export const AvailableOffer = styled.div`
     }
 
     button {
-        color: black;
         width: fit-content;
         height: fit-content;
         justify-items: end;
-        position: relative;
         align-self: flex-end;
+        align-items: flex-end;
+        color: #FF4500;
+        border: solid 1px #FF4500;
     }
 
     button:hover {
-        background-color: #8133ee;
+        background-color: #FF4500	;
         color: white;
     }
 `
 
 export const ProcessWrapper = styled.div`
+    grid-row: 3;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 3fr;
     grid-column-gap: 1em;
     text-align: center;
     color: blue;
-
     div {
         background: snow;
         border-radius: 3%;
@@ -153,10 +161,16 @@ export const ProcessWrapper = styled.div`
 
 export const FooterWrapper = styled.div`
     display: grid;
-    grid-template-columns: repeat(9, 1fr);
-    grid-template-rows: minmax(auto, 1fr);
+    grid-template-columns: repeat(9, 2fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 1em;
     color: white;
     background: linear-gradient(365deg, blue, purple);
+
+    div {
+        padding: 1rem;
+        border-left: solid white 2px;
+    }
 `
 
 
@@ -166,7 +180,7 @@ export const ModalWrapper = styled.div`
     height: auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    border-top: solid orange 5px;
+    border-top: solid orange 8px;
     background-color: snow;
     margin-left: 10%;
     z-index: 1;
@@ -176,6 +190,10 @@ export const ModalWrapper = styled.div`
     grid-column-gap: 1em;
     justify-content: space-around;
     
+    a {
+        color: black;
+        text-decoration: none;
+    }
     div {
         padding-bottom: 1em;
 
@@ -189,5 +207,34 @@ export const ModalWrapper = styled.div`
     .sub-title {
         border-bottom: solid orange 3px;
         width: 100%;
+    }
+`
+
+export const OurPromiseWrapper = styled.div`
+
+    grid-row: 3;
+    justify-self: flex-start;
+    display: grid;
+    height: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 0.5em;   
+
+    > div {
+        background-color: snow;
+        display: flex;
+        color: black;
+        flex-direction: row;
+        gap: 1em;
+        padding: 1em;
+        border-radius: 2%;
+    }
+
+    img {
+        width: 3vw;
+        height: 8vh;
+        align-items: center;
+        justify-self: center;
+        align-self: center;
     }
 `

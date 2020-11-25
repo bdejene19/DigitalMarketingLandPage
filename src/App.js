@@ -1,5 +1,5 @@
 import React from 'react';
-import { HomeHeader, HomePageWrapper, MainContentAd, MainPageCaptivatingWrapper, OffersWrapper, AvailableOffer, ProcessWrapper, FooterWrapper, ModalWrapper} from './components/styledComponents'
+import { HomeHeader, HomePageWrapper, MainContentAd, MainPageCaptivatingWrapper, OffersWrapper, AvailableOffer, ProcessWrapper, FooterWrapper, ModalWrapper, OurPromiseWrapper} from './components/styledComponents'
 import LocalPhoneIcon from '@material-ui/icons/LocalPhone';
 import {Typography, Button } from '@material-ui/core';
 import SearchIcon from '@material-ui/icons/Search';
@@ -61,9 +61,9 @@ function App() {
           <div style={{justifyContent: 'center', marginTop: '20%', display: "flex", flexDirection: 'row'}}>
             <LocalPhoneIcon color="primary" fontSize='large'></LocalPhoneIcon>
 
-            <Typography variant='h5' color="primary" style={{width: 'max-content'}}>
+            <a href="#"><Typography variant='h5' color="primary" style={{width: 'max-content'}}>
               1-800-694-5832
-            </Typography>
+            </Typography></a>
           </div>
         </HomePageWrapper>
 
@@ -71,64 +71,64 @@ function App() {
         <ModalWrapper id='services'  onMouseEnter={() => displayModal('services')} onMouseLeave={() => removeModal('services')}>
           <div>
             <div>
-              <Typography variant='subtitle1' className='sub-title'><b>Pay-Per-Click</b></Typography>
-              <Typography variant='body2'>Pay-Per-Click PPC</Typography>
-              <Typography variant='body2'>Display Advertising</Typography>
-              <Typography variant='body2'>Mobile Advertising</Typography>
-              <Typography variant='body2'>Video PPC</Typography>
-              <Typography variant='body2'>E-commerce</Typography>
-              <Typography variant='body2'>Bing Ads</Typography>
-              <Typography variant='body2'>Amazon Ads</Typography>
+              <a href="#"><Typography variant='subtitle1' className='sub-title'><b>Pay-Per-Click</b></Typography></a>
+              <a href="#"><Typography variant='body2'>Pay-Per-Click PPC</Typography></a>
+              <a href="#"><Typography variant='body2'>Display Advertising</Typography></a>
+              <a href="#"><Typography variant='body2'>Mobile Advertising</Typography></a>
+              <a href="#"><Typography variant='body2'>Video PPC</Typography></a>
+              <a href="#"><Typography variant='body2'>E-commerce</Typography></a>
+              <a href="#"><Typography variant='body2'>Bing Ads</Typography></a>
+              <a href="#"><Typography variant='body2'>Amazon Ads</Typography></a>
             </div>
 
 
             <div>
-              <Typography variant='subtitle1' className='sub-title'><b>Advertising Consultation</b></Typography>
+              <a href="#"><Typography variant='subtitle1' className='sub-title'><b>Advertising Consultation</b></Typography></a>
             </div>
           </div>
 
           <div>
             <div>
-              <Typography variant='subtitle1' className='sub-title' className='longSub-title'><b>Search Engine Optimization</b></Typography>
-              <Typography variant='body2'>Search Engine Optimization (SEO)</Typography>
-              <Typography variant='body2'>Localized Map SEO</Typography>
-              <Typography variant='body2'>E-commerce SEO</Typography>
+              <a href="#"><Typography variant='subtitle1' className='sub-title' className='longSub-title'><b>Search Engine Optimization</b></Typography></a>
+              <a href="#"><Typography variant='body2'>Search Engine Optimization (SEO)</Typography></a>
+              <a href="#"><Typography variant='body2'>Localized Map SEO</Typography></a>
+              <a href="#"><Typography variant='body2'>E-commerce SEO</Typography></a>
             </div>
             <div>
-              <Typography variant='subtitle1' className='sub-title'><b>Specialties</b></Typography>
-              <Typography variant='body2'>Legal Marketing</Typography>
-              <Typography variant='body2'>Medical Marketing</Typography>
+              <a href="#"><Typography variant='subtitle1' className='sub-title'><b>Specialties</b></Typography></a>
+              <a href="#"><Typography variant='body2'>Legal Marketing</Typography></a>
+              <a href="#"><Typography variant='body2'>Medical Marketing</Typography></a>
             </div>
             <div>
-              <Typography variant='subtitle1' className='sub-title'><b>Social Media Marketing</b></Typography>
-              <Typography variant='body2'>Paid Social Media Marketing</Typography>
-              <Typography variant='body2'>Organic Social Media Marketing</Typography>
+              <a href="#"><Typography variant='subtitle1' className='sub-title'><b>Social Media Marketing</b></Typography></a>
+              <a href="#"><Typography variant='body2'>Paid Social Media Marketing</Typography></a>
+              <a href="#"><Typography variant='body2'>Organic Social Media Marketing</Typography></a>
             </div>
           </div>
 
           <div>
             <div>
-              <Typography variant='subtitle1' className='sub-title'><b>Website Development</b></Typography>
-              <Typography variant='body2'>Web Design</Typography>
-              <Typography variant='body2'>Video Production and Video Marketing</Typography>
+              <a href="#"><Typography variant='subtitle1' className='sub-title'><b>Website Development</b></Typography></a>
+              <a href="#"><Typography variant='body2'>Web Design</Typography></a>
+              <a href="#"><Typography variant='body2'>Video Production and Video Marketing</Typography></a>
             </div>
 
             <div>
-              <Typography variant='subtitle1' className='sub-title'><b>Marketing Automation</b></Typography>
-              <Typography variant='body2'>Email Marketing</Typography>
+              <a href="#"><Typography variant='subtitle1' className='sub-title'><b>Marketing Automation</b></Typography></a>
+              <a href="#"><Typography variant='body2'>Email Marketing</Typography></a>
             </div>
 
             <div>
-              <Typography variant='subtitle1' className='sub-title'><b>Content</b></Typography>
-              <Typography variant='body2'>Paid Content</Typography>
+              <a href="#"><Typography variant='subtitle1' className='sub-title'><b>Content</b></Typography></a>
+              <a href="#"><Typography variant='body2'>Paid Content</Typography></a>
             </div>
 
             <div>
-              <Typography variant='subtitle1' className='sub-title'><b>Geofencing</b></Typography>
+              <a href="#"><Typography variant='subtitle1' className='sub-title'><b>Geofencing</b></Typography></a>
             </div>
             
             <div>
-              <Typography variant='subtitle1' className='sub-title'><b>Reputation Management</b></Typography>
+              <a href="#"><Typography variant='subtitle1' className='sub-title'><b>Reputation Management</b></Typography></a>
             </div>
 
           </div>
@@ -141,16 +141,16 @@ function App() {
 
         <ModalWrapper id='about' onMouseEnter={() => displayModal('about')}  onMouseLeave={() => removeModal('about')}>
           <div>
-            <Typography variant='subtitle1' className='sub-title'><b>About</b></Typography>
+            <a href="#"><Typography variant='subtitle1' className='sub-title'><b>About</b></Typography></a>
 
           </div>
 
           <div>
-            <Typography variant='subtitle1' className='sub-title'><b>Meet our team</b></Typography>
+            <a href="#"><Typography variant='subtitle1' className='sub-title'><b>Meet our team</b></Typography></a>
           </div>
 
           <div>
-            <Typography variant='subtitle1' className='sub-title' className='longSub-title'><b>Certifications and Credentials</b></Typography>
+            <a href="#"><Typography variant='subtitle1' className='longSub-title'><b>Certifications and Credentials</b></Typography></a>
           </div>
 
           <img src="https://nextlevelsem.com/wp-content/uploads/2019/11/menu-laptop.png" alt='about'></img>
@@ -158,28 +158,28 @@ function App() {
 
         <ModalWrapper id='blog' onMouseEnter={() => displayModal('blog')} onMouseLeave={() => removeModal('blog')}>
           <div>
-            <Typography variant='subtitle1' className='sub-title'><b>Google News</b></Typography>
+            <a href="#"><Typography variant='subtitle1' className='sub-title'><b>Google News</b></Typography></a>
             <br></br>
             <br></br>
             <br></br>
-            <Typography variant='subtitle1' className='sub-title'><b>SEO</b></Typography>
+            <a href="#"><Typography variant='subtitle1' className='sub-title'><b>SEO</b></Typography></a>
           </div>
 
           <div>
-            <Typography variant='subtitle1' className='sub-title'><b>Legal Marketing</b></Typography>
+            <a href="#"><Typography variant='subtitle1' className='sub-title'><b>Legal Marketing</b></Typography></a>
             <br></br>
             <br></br>
             <br></br>
-            <Typography variant='subtitle1' className='sub-title'><b>Social Media</b></Typography>
+            <a href="#"><Typography variant='subtitle1' className='sub-title'><b>Social Media</b></Typography></a>
 
           </div>
 
           <div>
-            <Typography variant='subtitle1' className='sub-title'><b>Pay Per Click</b></Typography>
+            <a href="#"><Typography variant='subtitle1' className='sub-title'><b>Pay Per Click</b></Typography></a>
             <br></br>
             <br></br>
             <br></br>
-            <Typography variant='subtitle1' className='sub-title'><b>Web Design</b></Typography>
+            <a href="#"><Typography variant='subtitle1' className='sub-title'><b>Web Design</b></Typography></a>
           </div>
 
           <img src="https://nextlevelsem.com/wp-content/uploads/2019/11/menu-client.png" alt='blog'></img>
@@ -305,7 +305,53 @@ function App() {
                   </div>
                 </ProcessWrapper>
                 <br></br>
-                <Button variant='outlined' color='primary' size='medium'>Learn More</Button>
+                <Button variant='outlined' color='primary' size='medium'>Sechdule A Call!</Button>
+              </AvailableOffer>
+            </OffersWrapper>
+          </article>
+        </section>
+
+
+        <section>
+          <article>
+            <OffersWrapper inputImage="https://www.mainstreetmediasavvy.com/wp-content/uploads/2020/01/business-Marketing.jpg">
+              <AvailableOffer>
+                <Typography variant='h3'><b>Our Promise</b></Typography>
+                <OurPromiseWrapper>
+                  <div>
+                    <img src="/guarenteeRibbon.png" alt='blue ribbon'></img>
+                    <div className='promiseText'>
+                      <Typography variant='subtitle1'><b>NLM Guarentee</b></Typography>
+                      <Typography variant='subtitle2'>We work for you, and you only. We commit to one client, per industry, per...</Typography>
+                    </div>
+                  </div>
+
+                  <div>
+                    <img src="guarenteeRibbon.png" alt='guarentee ribbon'></img>
+                    <div className='promiseText'>
+                      <Typography variant='subtitle1'><b>PPC Guarentee</b></Typography>
+                      <Typography variant='subtitle2'>If you don’t receive at least a 3-1 Return on Investment in Months...</Typography>
+                    </div>
+                  </div>
+
+                  <div>
+                    <img src="/guarenteeRibbon.png" alt='blue ribbon'></img>
+                    <div className='promiseText'>
+                      <Typography variant='subtitle1'><b>SEO Guarentee</b></Typography>
+                      <Typography variant='subtitle2'>We will rank you on the first page of the major search engines for at...</Typography>
+                    </div>
+                  </div>
+
+                  <div>
+                    <img src="https://cdn0.iconfinder.com/data/icons/business-687/32/icons-19-2-512.png" alt='data'></img>
+                    <div className='promiseText'>
+                      <Typography variant='subtitle1'><b>Datacentric Management</b></Typography>
+                      <Typography variant='subtitle2'>Our team eliminates guesswork with proprietary tracking and...</Typography>
+                    </div>
+                  </div>
+                </OurPromiseWrapper>
+                <Button variant='outlined' color='primary' size='medium' style={{gridRow: 4}}>Schedule A Call!</Button>
+
               </AvailableOffer>
             </OffersWrapper>
           </article>
@@ -314,8 +360,109 @@ function App() {
 
       <footer>
         <FooterWrapper>
-          
-         
+          <div>
+            <Typography variant='subtitle2'><b>Miami Office</b></Typography>
+            <Typography variant='body1'>
+              Phone: <br></br>
+              1-800-694-5832 <br></br>
+              Adress: <br></br>
+              2340 Wonderland Blvd, Miami Fl 33137
+            </Typography>
+          </div>
+
+          <div> 
+            <Typography variant='subtitle2'><b>Ft. Lauderdale Office</b></Typography>
+            <Typography variant='body1'>
+            Phone:<br></br>
+            (954) 372-4132 <br></br>
+            Address:<br></br>
+            1 E. Broward Blvd. Suite 700 Fort Lauderdale, FL 33301
+            </Typography>
+          </div>
+
+          <div>
+          <Typography variant='subtitle2'><b>Orlando Office</b></Typography>
+          <Typography variant='body1'>
+            Phone:<br></br>
+            (407) 751-1828 <br></br>
+            Address:<br></br>
+            121 South Orange Avenue Suite 1500 Orlando, FL 32801
+          </Typography>
+
+          </div>
+
+          <div>
+          <Typography variant='subtitle2'><b>Tampa Office</b></Typography>
+          <Typography variant='body1'>
+            Phone:<br></br>
+            (813) 547-8569 <br></br>
+            Address:<br></br>
+            601 N. Ashley Dr., Suite 1100-1002 Tampa, FL 33602
+          </Typography>
+
+
+
+          </div>
+
+          <div>
+            <Typography variant='subtitle2'><b>Los Angeles Office</b></Typography>
+            <Typography variant='body1'>
+              Phone:<br></br>
+              (310) 744-6597 <br></br>
+              Address:<br></br>
+              433 North Camden Drive 6th Floor Beverly Hills, CA 90210
+            </Typography>
+          </div>
+
+          <div>
+            <Typography variant='subtitle2'><b>San Fran Cisco Office</b></Typography>
+            <Typography variant='body1'>
+              Phone:<br></br>
+              (415) 849-3277 <br></br>
+              Address:<br></br>
+              388 Market Street, Suite 1300 San Francisco, CA 94111
+            </Typography>
+
+
+          </div>
+
+          <div>
+            <Typography variant='subtitle2'><b>New York</b></Typography>
+            <Typography variant='body1'>
+              Phone:<br></br>
+              (646) 494-3612 <br></br>
+              Address:<br></br>
+              Empire State Building, 350 Fifth Avenue, 59th floor New York City, NY 10118
+            
+            </Typography>
+
+
+          </div>
+
+          <div>
+            <Typography variant='subtitle2'><b>Brooklyn Office</b></Typography>
+            <Typography variant='body1'>
+              Phone:<br></br>
+              (646) 499-2955 <br></br>
+              Address:<br></br>
+              147 Front Street Brooklyn, NY 11201
+            </Typography>
+          </div>
+
+          <div>
+            <Typography variant='subtitle2'><b>Atlanta Office</b></Typography>
+            <Typography variant='body1'>
+              Phone:<br></br>
+              (470) 205-5160 <br></br>
+              Address: <br></br>
+              1201 West Peachtree Street Atlanta, GA 30309
+            
+            </Typography>
+
+
+          </div>
+
+
         </FooterWrapper>
       </footer>
       
