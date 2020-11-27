@@ -1,4 +1,6 @@
 import styled from 'styled-components';
+import { device } from '../responsiveViews/device';
+
 
 export const HomePageWrapper = styled.div`
     
@@ -9,8 +11,8 @@ export const HomePageWrapper = styled.div`
     grid-auto-columns:minmax(100px, auto);
     background-color: snow;
     .navImg {
-        width: 20vw;
-        height: 18vh;
+        width: 17vw;
+        height: 14vh;
     }
 
     .marketingImage {
@@ -21,9 +23,14 @@ export const HomePageWrapper = styled.div`
     a {
         text-decoration: none;
     }
-`
+
+    @media screen and  (${device.laptop}) {
+        
+    }
+`;
 
 export const HomeHeader = styled.nav`
+    
     display: flex;
     flex-direction: row;
     grid-column: 2/3;
@@ -81,6 +88,23 @@ export const MainContentAd = styled.div`
     grid-column: 1;
     width: 50vw;
     text-align: center;
+    margin: 1.5em;
+     button {
+        width: fit-content;
+        height: fit-content;
+        justify-items: end;
+        align-self: flex-end;
+        align-items: flex-end;
+        color: #FF4500;
+        background-color: snow;
+        border: solid 3px #FF4500;
+    }
+
+    button:hover {
+        background-color: #FF4500	;
+        color: white;
+    }
+
 `
 
 export const OffersWrapper = styled.div`
@@ -88,6 +112,7 @@ export const OffersWrapper = styled.div`
     height: 100vh;
     background-image: url(${props => props.inputImage});
     background-size: cover;
+    
     
 `
 
@@ -161,16 +186,19 @@ export const ProcessWrapper = styled.div`
 
 export const FooterWrapper = styled.div`
     display: grid;
-    grid-template-columns: repeat(9, 2fr);
+    grid-template-columns: repeat(9, 1fr);
     grid-template-rows: 1fr;
-    grid-column-gap: 1em;
     color: white;
     background: linear-gradient(365deg, blue, purple);
 
     div {
-        padding: 1rem;
+        padding: 0.5em;
         border-left: solid white 2px;
+        margin-top: 2em;
+        margin-bottom: 2em;
     }
+
+    .contact-text {}
 `
 
 
