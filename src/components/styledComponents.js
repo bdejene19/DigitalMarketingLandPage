@@ -7,9 +7,8 @@ export const HomePageWrapper = styled.div`
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     grid-template-rows: 1fr;
-    grid-auto-rows: minmax(100px, auto);
     grid-auto-columns:minmax(100px, auto);
-    background-color: snow;
+    background-color: white;
     .navImg {
         width: 17vw;
         height: 14vh;
@@ -18,11 +17,9 @@ export const HomePageWrapper = styled.div`
 
     .phone-contact {
         display: flex;
-
         justify-content: center; 
         align-items: center; 
         flex-direction: row;
-        border: solid black 3px;
         
         a {
             text-decoration: none;
@@ -48,7 +45,8 @@ export const HomeHeader = styled.nav`
     height: 100%;
     & button {
         width: max-content;
-        margin: 1em;
+        padding: 1em;
+        margin: 0;
     }
     @media screen and  (${device.laptop}) {
         display: none;
@@ -63,15 +61,12 @@ export const MainPageCaptivatingWrapper = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1;
-    background-color: snow;
+    background-color: white;
     padding-top: 10vh;
     color: pink;
-    padding: 3.5em;
 
-    .caption {
-        
+    #caption {
         background-color: #3f51b5;
-        padding: 0.5em;
         padding-bottom: 0;
         background-image: linear-gradient(65deg, #3f51b5, #9c27b0);
         background-size: 100%;
@@ -80,23 +75,13 @@ export const MainPageCaptivatingWrapper = styled.div`
         -moz-background-clip: text;
         -webkit-text-fill-color: transparent; 
         -moz-text-fill-color: transparent;
+
     }
 
+
     & img {
-        width: 40vw;
+        width: 35vw;
         justify-self: left;
-        padding: 1.5em;
-   }
-
-    & .affiliatedLogos {
-        display: flex;
-        flex-direction: row;
-        padding: 1.5rem;
-
-        & img {
-            width: 12vw;
-            height: 23vh;
-        }
     }
 
     @media screen and (${device.laptop}) {
@@ -123,8 +108,7 @@ export const MainPageCaptivatingWrapper = styled.div`
 `
 export const MainContentAd = styled.div`
     grid-column: 1;
-    text-align: center;
-
+    padding-left: 10.5vw;
     button {
         width: fit-content;
         height: fit-content;
@@ -132,8 +116,13 @@ export const MainContentAd = styled.div`
         align-self: flex-end;
         align-items: flex-end;
         color: #FF4500;
-        background-color: snow;
+        background-color: white;
         border: solid 3px #FF4500;
+    }
+
+    .mainContentAd-text {
+        margin-bottom: 2em;
+        margin-top: 0.5em;
     }
 
     button:hover {
@@ -216,7 +205,7 @@ export const ProcessWrapper = styled.div`
     text-align: center;
     color: blue;
     div {
-        background: snow;
+        background: white;
         border-radius: 3%;
         padding: 0.25em;
         
@@ -255,7 +244,7 @@ export const ModalWrapper = styled.div`
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     border-top: solid orange 8px;
-    background-color: snow;
+    background-color: white;
     margin-left: 10%;
     z-index: 1;
     visibility: hidden;
@@ -295,7 +284,7 @@ export const OurPromiseWrapper = styled.div`
     grid-gap: 0.5em;   
 
     > div {
-        background-color: snow;
+        background-color: white;
         display: flex;
         color: black;
         flex-direction: row;

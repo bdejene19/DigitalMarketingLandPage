@@ -46,7 +46,7 @@ function App() {
                 <a href="#">Clients</a>
                 <a href="#">Contact</a>
           </div>
-          <HomePageWrapper id='homePage-top'>
+          <HomePageWrapper id='homePage-top' className='snap-location'>
             {/**<SidePanel></SidePanel>*/}
             <img src="https://www.squadhelp.com/images/logo/logodesi9/33389highmark_seo_6.png" alt='marketing logo' className='navImg'></img>
             <HomeHeader>
@@ -187,19 +187,17 @@ function App() {
         <main>
           <section>
             <article>
-              <MainPageCaptivatingWrapper className='snap-location'>
+              <MainPageCaptivatingWrapper>
                 <MainContentAd>
-                    <Typography variant="h3" color="primary" className='caption'>Decades of experience that shines through our work.</Typography>
-                    <Typography variant='h4' color='secondary'>Award winning and certified in SEO practices.</Typography>
-                    <Button variant='contained'>START YOUR FREE STRATEGY SESSION NOW!</Button>
-                    <div className='affiliatedLogos'>
-                      <img src="https://i.pcmag.com/imagery/reviews/04u4r8E0NHva7mQ3Bnozbh6-9.1569482850.fit_scale.size_1600x900.jpg" alt='google analytics'></img>
-                      <img src="https://getvectorlogo.com/wp-content/uploads/2019/09/facebook-marketing-partner-vector-logo.png" alt='facebook markreting'></img>
-                      <img src="https://bestaffiliatemarketingtools.org/wp-content/uploads/2019/12/amazon-associates-logo.png" alt='amazon affiliation'></img>
-                      <img src="https://images.youracclaim.com/size/680x680/images/deed794e-0844-4eba-b699-35b964c58e59/Facebook_blueprint_-_certified_buyer-01.png" alt='facebook blueprint'></img>
-                    </div>
+                  <div>
+                    <Typography variant="h4" color="primary" id='caption'>Decades Of Experience That Shines Through Our Work.</Typography>
+                    <Typography variant='h5' color='secondary' className='mainContentAd-text'>Award winning and certified in SEO practices.</Typography>
+                    <Button variant='contained' className='mainContentAd-text'>START YOUR FREE STRATEGY SESSION NOW!</Button>
+                  </div>
+                    
+                    <img src="https://nextlevelsem.com/wp-content/home-static/hrayr/assets/homepage-slide1-v001.webp" alt='affilitated logos'></img>
                 </MainContentAd>
-                <img src="https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fspecials-images.forbesimg.com%2Fdam%2Fimageserve%2F974512548%2F960x0.jpg%3Ffit%3Dscale" alt='marketing'></img>
+                <img src="https://nextlevelsem.com/wp-content/home-static/hrayr/assets/home-hero-graphic-med.webp" alt='marketing'></img>
               </MainPageCaptivatingWrapper>
             </article>
           </section>
@@ -359,7 +357,7 @@ function App() {
         </main>
 
         <footer>
-          <FooterWrapper>
+          <FooterWrapper className='snap-location'>
             <div>
               <Typography variant='subtitle2'><b>Miami Office</b></Typography>
               <br></br>
