@@ -3,7 +3,7 @@ import { device } from '../responsiveViews/device';
 
 
 export const HomePageWrapper = styled.div`
-    
+
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     grid-template-rows: 1fr;
@@ -33,6 +33,8 @@ export const HomePageWrapper = styled.div`
         }
     }
 
+    @media screen and (${device.tablet}) {}
+
     
 `;
 
@@ -42,7 +44,6 @@ export const HomeHeader = styled.nav`
     flex-direction: row;
     grid-column: 2/3;
     grid-gap: 0;
-    height: 100%;
     & button {
         width: max-content;
         padding: 1em;
@@ -50,8 +51,6 @@ export const HomeHeader = styled.nav`
     }
     @media screen and  (${device.laptop}) {
         display: none;
-
-        
     }
 
   
@@ -64,7 +63,7 @@ export const MainPageCaptivatingWrapper = styled.div`
     background-color: white;
     padding-top: 10vh;
     color: pink;
-
+    
     #caption {
         background-color: #3f51b5;
         padding-bottom: 0;
@@ -95,14 +94,14 @@ export const MainPageCaptivatingWrapper = styled.div`
 
     @media screen and (${device.tablet}) {
         display: flex;
+        padding-top: 10%;
         flex-direction: column;
-
-        img {
+        .marketing-photo {
             visibility: hidden;
         }
 
-        .affiliatedLogos img {
-            visibility: 18vh;
+        .affiliated-businesses {
+            width: 100%;
         }
     }
 `
@@ -130,6 +129,26 @@ export const MainContentAd = styled.div`
         color: white;
     }
 
+
+
+    @media screen and (${device.tablet}) {
+        padding-left: 0;
+        text-align: center;
+        button {
+            width: 75vw;
+        }
+
+        .mainContentAd-text {
+            margin: 0.5em;
+        }
+    }
+
+    @media screen and (${device.mobileL}) {
+        button {
+            width: 70vw;
+        }
+    }
+
 `
 
 export const OffersWrapper = styled.div`
@@ -148,10 +167,10 @@ export const AvailableOffer = styled.div`
     padding: 1.5em;
     color: white;
     width: fit-content;
-    height: 85%;
+    height: 90%;
     width: 40%;
     background: linear-gradient(200deg, rgba(0, 0, 225, 0.85), rgba(148, 0, 221, 0.85));
-    transform: translate(5vw, 8vh);
+    transform: translate(5vw, 6vh);
 
     .pText{
         align-self: center;
@@ -186,12 +205,28 @@ export const AvailableOffer = styled.div`
     }
 
     @media screen and (${device.laptop}) {
-        width: 55%;
-        height: 80%
+        width: 60%;
     }
 
     @media screen and (${device.tablet}) {
-        width: 70% ;
+        width: 70%;
+        padding: 0.5em;
+        h4 {
+            font-size: 24px;
+        }
+
+        .awards {
+            text-align: right;
+            display: inline-block;
+            img {
+                padding: 2%;
+            }
+
+        }
+
+        button {
+            width: 100%;
+        }
     }
 
 `
@@ -206,18 +241,41 @@ export const ProcessWrapper = styled.div`
     color: blue;
     div {
         background: white;
-        border-radius: 3%;
+        border-radius: 2%;
         padding: 0.25em;
         
     }
-
+    .process-icon {
+        font-size: 50px;
+    }
     h5 {
         color: blue;
     }
     .processText {
         color: darkgrey;
     }
-`
+
+    @media screen and (${device.tablet}) {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-column-gap: 0;
+        grid-row-gap: 0.5em;
+        grid-row: 2;
+
+        .process-icon {
+            font-size: 30px;
+        }
+
+        h5 {
+            font-size: 20px;
+        }
+        img {
+            width: 75%;
+        }
+
+       
+    }
+ `
 
 export const FooterWrapper = styled.div`
     display: grid;
@@ -233,7 +291,24 @@ export const FooterWrapper = styled.div`
         margin-bottom: 2em;
     }
 
-    .contact-text {}
+    @media screen and (${device.laptop}) {
+        grid-template-columns: repeat(4, 1fr);
+        div {
+            border-right: solid white 2px;
+            border-left: none;
+            padding-right: 1em;
+            &&:nth-child(odd) {
+                color: black;
+            }
+        }
+
+        
+    }
+
+    @media screen and (${device.tablet}) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
 `
 
 
@@ -271,6 +346,11 @@ export const ModalWrapper = styled.div`
         border-bottom: solid orange 3px;
         width: 100%;
     }
+
+    @media screen and (${device.laptop}) {
+        width: 10%;
+        display: none;
+    }
 `
 
 export const OurPromiseWrapper = styled.div`
@@ -299,5 +379,22 @@ export const OurPromiseWrapper = styled.div`
         align-items: center;
         justify-self: center;
         align-self: center;
+    }
+
+    @media screen and (${device.laptop}) {
+       font-size: 8px;
+       grid-gap: 1em;
+    }
+
+    @media screen and (${device.tablet}) {
+        grid-row: 2;
+        > div {
+            flex-direction: column;
+            border-radius: 1%;
+        }
+
+        img {
+            width: 5vw;
+        }
     }
 `

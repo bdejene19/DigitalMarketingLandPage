@@ -188,6 +188,7 @@ function App() {
           <section>
             <article>
               <MainPageCaptivatingWrapper>
+
                 <MainContentAd>
                   <div>
                     <Typography variant="h4" color="primary" id='caption'>Decades Of Experience That Shines Through Our Work.</Typography>
@@ -195,10 +196,12 @@ function App() {
                     <Button variant='contained' className='mainContentAd-text'>START YOUR FREE STRATEGY SESSION NOW!</Button>
                   </div>
                     
-                    <img src="https://nextlevelsem.com/wp-content/home-static/hrayr/assets/homepage-slide1-v001.webp" alt='affilitated logos'></img>
+                    <img src="https://nextlevelsem.com/wp-content/home-static/hrayr/assets/homepage-slide1-v001.webp" alt='affilitated logos' className='affiliated-businesses'></img>
+
                 </MainContentAd>
-                <img src="https://nextlevelsem.com/wp-content/home-static/hrayr/assets/home-hero-graphic-med.webp" alt='marketing'></img>
+                <img src="https://nextlevelsem.com/wp-content/home-static/hrayr/assets/home-hero-graphic-med.webp" alt='marketing' className='marketing-photo'></img>
               </MainPageCaptivatingWrapper>
+
             </article>
           </section>
           
@@ -208,7 +211,7 @@ function App() {
               <OffersWrapper inputImage="https://images.all-free-download.com/images/graphiclarge/digital_marketing_background_woman_laptop_business_elements_decor_6838079.jpg">
                 <AvailableOffer className='snap-location'>
                   <div>
-                    <Typography variant='h3'><b>Pay Per Click Advertising</b></Typography>
+                    <Typography variant='h4'><b>Pay Per Click Advertising</b></Typography>
                   </div>
 
                   <div className='pText'>
@@ -231,7 +234,7 @@ function App() {
               <OffersWrapper inputImage="https://www.explainervideoagency.com/blog/wp-content/uploads/2017/01/Main-Header-5-Advanced-You-Tube-Video-Optimization-Tactics.jpg">
                 <AvailableOffer className='snap-location'>
                   <div>
-                    <Typography variant='h3'><b>Search Engine Optimization</b></Typography>
+                    <Typography variant='h4'><b>Search Engine Optimization</b></Typography>
                   </div>
 
                   <div className='pText'>
@@ -256,7 +259,7 @@ function App() {
               <OffersWrapper inputImage="https://www.vaishnogsoftwares.com/images/00SocialMediaMarketing.jpg">
                 <AvailableOffer className='snap-location'>
                   <div>
-                    <Typography variant='h3'><b>Social Media Marketing</b></Typography>
+                    <Typography variant='h4'><b>Social Media Marketing</b></Typography>
                   </div>
 
                   <div  className='pText'>
@@ -283,19 +286,19 @@ function App() {
                   <Typography variant='h4'><b>Our Process to Better Marketing, Leads, and Results</b></Typography>
                   <ProcessWrapper>
                     <div>
-                      <SearchIcon color='inherit' style={{width: 70, height: 60}}></SearchIcon>
+                      <SearchIcon color='inherit' className='process-icon'></SearchIcon>
                       <Typography variant='h5'><b>Discover</b></Typography>
                       <Typography variant='body2' className='processText'>We offer a FREE Audit of your SEM, SEO, SMM initiative(s) and competitor analysis. Then we deliver a detailed customized proposal at NO COST!</Typography>
                     </div>
 
                     <div>
-                      <AddCircleOutlineIcon color='inherit' style={{width: 70, height: 60}}></AddCircleOutlineIcon>
+                      <AddCircleOutlineIcon color='inherit' className='process-icon'></AddCircleOutlineIcon>
                       <Typography variant='h5'><b>Create</b></Typography>
                       <Typography variant='body2' className='processText'>We will create a custom-tailored marketing strategy for your business, which includes: video, photography, infographics, articles, and more.</Typography>
                     </div>
                     
                     <div>
-                      <BubbleChartIcon color='inherit' style={{width: 70, height: 60}}></BubbleChartIcon>
+                      <BubbleChartIcon color='inherit' className='process-icon'></BubbleChartIcon>
                       <Typography variant='h5'><b>Evolve</b></Typography>
                       <Typography variant='body2' className='processText'>As technology, market trends, and budgets change, we continue to adapt your marketing strategy, delivering consistent exponential growth.</Typography>
                     </div>
@@ -311,7 +314,7 @@ function App() {
             <article>
               <OffersWrapper inputImage="https://www.mainstreetmediasavvy.com/wp-content/uploads/2020/01/business-Marketing.jpg">
                 <AvailableOffer className='snap-location'> 
-                  <Typography variant='h3'><b>Our Promise</b></Typography>
+                  <Typography variant='h4'><b>Our Promise</b></Typography>
                   <OurPromiseWrapper>
                     <div>
                       <img src="/guarenteeRibbon.png" alt='blue ribbon'></img>
