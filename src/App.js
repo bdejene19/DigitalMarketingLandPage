@@ -8,6 +8,7 @@ import BubbleChartIcon from '@material-ui/icons/BubbleChart';
 import ArrowRightIcon from '@material-ui/icons/ArrowRight';
 import './styles.css';
 import {Page} from './Page';
+import SidePanel from './components/SidePanel';
 
 const displayModal = (navBarTab) => {
   let modalBox = document.getElementById(navBarTab);
@@ -26,12 +27,27 @@ const removeModal = (navBarTab) => {
   modalBox.style.transition = 'all 0.25s';
   modalBox.style.transitionDelay = '0.25s'
 }
+
+
+function closeNav() {
+  document.getElementById("mySidepanel").style.width = "0";
+}
+
+
 function App() {
   return (
     <Page>
       <div className='content-wrapper'>
         <header>
+        <div id="mySidepanel" className="sidepanel">
+                <a href="javascript:void(0)" className="closebtn" onClick={() => closeNav()}>×</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Clients</a>
+                <a href="#">Contact</a>
+          </div>
           <HomePageWrapper id='homePage-top'>
+            {/**<SidePanel></SidePanel>*/}
             <img src="https://www.squadhelp.com/images/logo/logodesi9/33389highmark_seo_6.png" alt='marketing logo' className='navImg'></img>
             <HomeHeader>
                 <Button color='primary' disableRipple>Home</Button >
@@ -41,9 +57,8 @@ function App() {
                 <Button color='primary' disableRipple onMouseEnter={() => displayModal('blog')} onMouseLeave={() => removeModal('blog')}>Blog<ArrowRightIcon></ArrowRightIcon></Button >
                 <Button color='primary' disableRipple>Contact Us</Button >
             </HomeHeader>
-            <div style={{justifyContent: 'center', marginTop: '20%', display: "flex", flexDirection: 'row'}}>
+            <div className='phone-contact'>
               <LocalPhoneIcon color="primary" fontSize='large'></LocalPhoneIcon>
-
               <a href="#"><Typography variant='h5' color="primary" style={{width: 'max-content'}}>
                 1-800-694-5832
               </Typography></a>
@@ -172,7 +187,7 @@ function App() {
         <main>
           <section>
             <article>
-              <MainPageCaptivatingWrapper>
+              <MainPageCaptivatingWrapper className='snap-location'>
                 <MainContentAd>
                     <Typography variant="h3" color="primary" className='caption'>Decades of experience that shines through our work.</Typography>
                     <Typography variant='h4' color='secondary'>Award winning and certified in SEO practices.</Typography>
@@ -189,11 +204,11 @@ function App() {
             </article>
           </section>
           
-
+          <div className='offers-wrapper'>
           <section>
             <article>
               <OffersWrapper inputImage="https://images.all-free-download.com/images/graphiclarge/digital_marketing_background_woman_laptop_business_elements_decor_6838079.jpg">
-                <AvailableOffer bgColor='lightblue'>
+                <AvailableOffer className='snap-location'>
                   <div>
                     <Typography variant='h3'><b>Pay Per Click Advertising</b></Typography>
                   </div>
@@ -216,7 +231,7 @@ function App() {
           <section>
             <article>
               <OffersWrapper inputImage="https://www.explainervideoagency.com/blog/wp-content/uploads/2017/01/Main-Header-5-Advanced-You-Tube-Video-Optimization-Tactics.jpg">
-                <AvailableOffer>
+                <AvailableOffer className='snap-location'>
                   <div>
                     <Typography variant='h3'><b>Search Engine Optimization</b></Typography>
                   </div>
@@ -241,7 +256,7 @@ function App() {
           <section>
             <article>
               <OffersWrapper inputImage="https://www.vaishnogsoftwares.com/images/00SocialMediaMarketing.jpg">
-                <AvailableOffer>
+                <AvailableOffer className='snap-location'>
                   <div>
                     <Typography variant='h3'><b>Social Media Marketing</b></Typography>
                   </div>
@@ -266,7 +281,7 @@ function App() {
           <section>
             <article>
               <OffersWrapper inputImage="https://q3p9g6n2.rocketcdn.me/wp-content/ml-loads/2017/04/people-digital-content-data-ss-1920.jpg">
-                <AvailableOffer>
+                <AvailableOffer className='snap-location'>
                   <Typography variant='h4'><b>Our Process to Better Marketing, Leads, and Results</b></Typography>
                   <ProcessWrapper>
                     <div>
@@ -294,11 +309,10 @@ function App() {
             </article>
           </section>
 
-
           <section>
             <article>
               <OffersWrapper inputImage="https://www.mainstreetmediasavvy.com/wp-content/uploads/2020/01/business-Marketing.jpg">
-                <AvailableOffer>
+                <AvailableOffer className='snap-location'> 
                   <Typography variant='h3'><b>Our Promise</b></Typography>
                   <OurPromiseWrapper>
                     <div>
@@ -339,6 +353,9 @@ function App() {
               </OffersWrapper>
             </article>
           </section>
+
+          </div>
+          
         </main>
 
         <footer>

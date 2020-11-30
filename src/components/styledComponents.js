@@ -13,20 +13,30 @@ export const HomePageWrapper = styled.div`
     .navImg {
         width: 17vw;
         height: 14vh;
+
     }
 
-    .marketingImage {
-        width: 33vw;
-        grid-column: 3/4
-    }
+    .phone-contact {
+        display: flex;
 
-    a {
-        text-decoration: none;
+        justify-content: center; 
+        align-items: center; 
+        flex-direction: row;
+        border: solid black 3px;
+        
+        a {
+            text-decoration: none;
+        }
+
     }
 
     @media screen and  (${device.laptop}) {
-        
+        .phone-contact {
+            grid-column: 3;
+        }
     }
+
+    
 `;
 
 export const HomeHeader = styled.nav`
@@ -40,6 +50,11 @@ export const HomeHeader = styled.nav`
         width: max-content;
         margin: 1em;
     }
+    @media screen and  (${device.laptop}) {
+        display: none;
+
+        
+    }
 
   
 `
@@ -51,10 +66,10 @@ export const MainPageCaptivatingWrapper = styled.div`
     background-color: snow;
     padding-top: 10vh;
     color: pink;
-    padding-left: 5em;
-    padding-right: 5em;
+    padding: 3.5em;
 
     .caption {
+        
         background-color: #3f51b5;
         padding: 0.5em;
         padding-bottom: 0;
@@ -69,9 +84,9 @@ export const MainPageCaptivatingWrapper = styled.div`
 
     & img {
         width: 40vw;
-        justify-self: center;
+        justify-self: left;
         padding: 1.5em;
-    }
+   }
 
     & .affiliatedLogos {
         display: flex;
@@ -83,13 +98,34 @@ export const MainPageCaptivatingWrapper = styled.div`
             height: 23vh;
         }
     }
+
+    @media screen and (${device.laptop}) {
+        margin: 0;
+        padding: 1em;
+
+        .affiliatedLogos img {
+            height: 18vh;
+        }
+    }
+
+    @media screen and (${device.tablet}) {
+        display: flex;
+        flex-direction: column;
+
+        img {
+            visibility: hidden;
+        }
+
+        .affiliatedLogos img {
+            visibility: 18vh;
+        }
+    }
 `
 export const MainContentAd = styled.div`
     grid-column: 1;
-    width: 50vw;
     text-align: center;
-    margin: 1.5em;
-     button {
+
+    button {
         width: fit-content;
         height: fit-content;
         justify-items: end;
@@ -123,11 +159,11 @@ export const AvailableOffer = styled.div`
     padding: 1.5em;
     color: white;
     width: fit-content;
-    height: 90%;
+    height: 85%;
     width: 40%;
     background: linear-gradient(200deg, rgba(0, 0, 225, 0.85), rgba(148, 0, 221, 0.85));
     transform: translate(5vw, 8vh);
-    
+
     .pText{
         align-self: center;
     }
@@ -159,6 +195,16 @@ export const AvailableOffer = styled.div`
         background-color: #FF4500	;
         color: white;
     }
+
+    @media screen and (${device.laptop}) {
+        width: 55%;
+        height: 80%
+    }
+
+    @media screen and (${device.tablet}) {
+        width: 70% ;
+    }
+
 `
 
 export const ProcessWrapper = styled.div`

@@ -3,16 +3,22 @@ import { device } from './responsiveViews/device';
 
 
 export const Page = styled.div`
-    
+    overflow: auto;
     // come back to finish how to add specific destination for the scroll flex;
     main {
         width: 100vw;
-        height: 100vh;
-        overflow-y: scroll;  
-
+        height: 90vh;
+        overflow-y: scroll;
         scroll-snap-type: y mandatory;
-        scroll-snap-destination: bottom;
+
+        .snap-location {
+            scroll-snap-align: start;
+        }
+
     }
+
+
+
     
   
     @media ${device.laptop} {
