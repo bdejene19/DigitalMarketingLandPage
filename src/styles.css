@@ -8,13 +8,13 @@
 
 
 .sidepanel  {
-    width: 0;
+    width: 60vw;
+    height: 100vh;
     position: fixed;
     z-index: 1;
-    height: 250px;
     top: 0;
     left: 0;
-    background-color: #111;
+    background: linear-gradient(180deg, rgba(0, 0, 225), rgba(148, 0, 221));
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -23,10 +23,13 @@
   .sidepanel a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
+    display: flex;
+    flex-direction: row;
     font-size: 25px;
-    color: #818181;
+    color: white;
     display: block;
     transition: 0.3s;
+    width: max-content;
   }
   
   .sidepanel a:hover {
@@ -48,11 +51,10 @@
     padding: 10px 15px;
     border: none;
     grid-column: 3;
+    text-emphasis: none;
   }
   
-  .openbtn:hover {
-    background-color:#444;
-  }
+  
 
 
 

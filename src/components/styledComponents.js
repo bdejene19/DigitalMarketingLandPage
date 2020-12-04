@@ -3,14 +3,13 @@ import { device } from '../responsiveViews/device';
 
 
 export const HomePageWrapper = styled.div`
-
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
-    grid-auto-columns:minmax(100px, auto);
     background-color: white;
+
     .navImg {
-        width: 17vw;
+        width: 14vw;
         height: 14vh;
 
     }
@@ -27,24 +26,59 @@ export const HomePageWrapper = styled.div`
 
     }
 
+    .openbtn {
+        display: none;
+    }
+
+    .openbtn:focus{
+        outline: 0;
+    }
+
+
+    .sidepanel {
+        display: none;
+    }
+
     @media screen and  (${device.laptop}) {
         .phone-contact {
             grid-column: 3;
         }
+
+        .sidepanel{
+            display: block;
+        }
+
+        .openbtn {
+            display: block;
+            height: 100%;
+            font-size: 44px;
+           
+            color: darkgrey;
+            background: white;
+          
+        }
     }
 
-    @media screen and (${device.tablet}) {}
+    @media screen and (${device.tablet}) {
+        .contact-phoneNumber {
+            display: none;
+        }
+        .phone-contact {
+            justify-self: right;
+            padding: 1em;
+        }
 
+        .openbtn {
+            padding-right: 1em;
+        }
+    }
     
 `;
 
 export const HomeHeader = styled.nav`
-    
     display: flex;
     flex-direction: row;
-    grid-column: 2/3;
-    grid-gap: 0;
-    & button {
+        & button {
         width: max-content;
         padding: 1em;
         margin: 0;
@@ -96,12 +130,14 @@ export const MainPageCaptivatingWrapper = styled.div`
         display: flex;
         padding-top: 10%;
         flex-direction: column;
+
         .marketing-photo {
             visibility: hidden;
         }
 
+       
         .affiliated-businesses {
-            width: 100%;
+            width: 80%;
         }
     }
 `
@@ -134,31 +170,23 @@ export const MainContentAd = styled.div`
     @media screen and (${device.tablet}) {
         padding-left: 0;
         text-align: center;
+
         button {
-            width: 75vw;
+            width: max-content;
         }
 
         .mainContentAd-text {
             margin: 0.5em;
         }
     }
-
-    @media screen and (${device.mobileL}) {
-        button {
-            width: 70vw;
-        }
-    }
-
-`
+`;
 
 export const OffersWrapper = styled.div`
     width: 100vw;
     height: 100vh;
     background-image: url(${props => props.inputImage});
-    background-size: cover;
-    
-    
-`
+    background-size: cover; 
+`;
 
 export const AvailableOffer = styled.div`
     display: grid;
@@ -172,7 +200,7 @@ export const AvailableOffer = styled.div`
     background: linear-gradient(200deg, rgba(0, 0, 225, 0.85), rgba(148, 0, 221, 0.85));
     transform: translate(5vw, 6vh);
 
-    .pText{
+    .pText{ 
         align-self: center;
     }
 
@@ -205,12 +233,12 @@ export const AvailableOffer = styled.div`
     }
 
     @media screen and (${device.laptop}) {
-        width: 60%;
+        width: 50%;
+        
     }
 
     @media screen and (${device.tablet}) {
         width: 70%;
-        padding: 0.5em;
         h4 {
             font-size: 24px;
         }
@@ -221,11 +249,22 @@ export const AvailableOffer = styled.div`
             img {
                 padding: 2%;
             }
-
         }
 
         button {
             width: 100%;
+        }
+
+        
+
+        br > button { 
+            color: black;
+        }
+    }
+
+    @media screen and (max-width: 550px) {
+        .learnMore-process {
+            visibility: hidden;
         }
     }
 
@@ -308,8 +347,7 @@ export const FooterWrapper = styled.div`
     @media screen and (${device.tablet}) {
         grid-template-columns: repeat(2, 1fr);
     }
-
-`
+`;
 
 
 export const ModalWrapper = styled.div`

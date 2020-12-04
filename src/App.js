@@ -9,7 +9,7 @@ import ArrowRightIcon from '@material-ui/icons/ArrowRight';
 import './styles.css';
 import {Page} from './Page';
 import SidePanel from './components/SidePanel';
-
+import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 const displayModal = (navBarTab) => {
   let modalBox = document.getElementById(navBarTab);
   modalBox.style.transform = "translate(0, 0)";
@@ -25,7 +25,7 @@ const removeModal = (navBarTab) => {
   modalBox.style.visibility = 'hidden';
   modalBox.style.opacity = 0;
   modalBox.style.transition = 'all 0.25s';
-  modalBox.style.transitionDelay = '0.25s'
+  modalBox.style.transitionDelay = '0.1s'
 }
 
 
@@ -37,18 +37,25 @@ function closeNav() {
 function App() {
   return (
     <Page>
-      <div className='content-wrapper'>
+      <div className='content-wrapper' onLoad={() => closeNav()}>
         <header>
-        <div id="mySidepanel" className="sidepanel">
-                <a href="javascript:void(0)" className="closebtn" onClick={() => closeNav()}>×</a>
-                <a href="#">About</a>
-                <a href="#">Services</a>
-                <a href="#">Clients</a>
-                <a href="#">Contact</a>
+          <div id="mySidepanel" className="sidepanel">
+                  <a href="javascript:void(0)" className="closebtn" onClick={() => closeNav()}>×</a>
+                  <a href="#">Home</a>
+                  <a href="#">Services <ArrowForwardIosIcon></ArrowForwardIosIcon></a>
+                  <a href="#">Value Proposition<ArrowForwardIosIcon></ArrowForwardIosIcon> </a>
+                  <a href="#">About</a>
+                  <a href="#">Blog <ArrowForwardIosIcon></ArrowForwardIosIcon></a>
+                  <a href="#">Contact Us</a>
+
           </div>
           <HomePageWrapper id='homePage-top' className='snap-location'>
-            {/**<SidePanel></SidePanel>*/}
-            <img src="https://www.squadhelp.com/images/logo/logodesi9/33389highmark_seo_6.png" alt='marketing logo' className='navImg'></img>
+            <div style={{display: 'flex', flexDirection: "row"}}>
+
+              <SidePanel></SidePanel>
+              <img src="https://www.squadhelp.com/images/logo/logodesi9/33389highmark_seo_6.png" alt='marketing logo' className='navImg'></img>
+            </div>
+
             <HomeHeader>
                 <Button color='primary' disableRipple>Home</Button >
                 <Button color='primary' disableRipple onMouseEnter={() => displayModal('services')} onMouseLeave={() => removeModal('services')}>Services<ArrowRightIcon></ArrowRightIcon></Button >
@@ -59,7 +66,7 @@ function App() {
             </HomeHeader>
             <div className='phone-contact'>
               <LocalPhoneIcon color="primary" fontSize='large'></LocalPhoneIcon>
-              <a href="#"><Typography variant='h5' color="primary" style={{width: 'max-content'}}>
+              <a href="#"><Typography variant='h5' color="primary" className='contact-phoneNumber'style={{width: 'max-content'}}>
                 1-800-694-5832
               </Typography></a>
             </div>
@@ -304,7 +311,7 @@ function App() {
                     </div>
                   </ProcessWrapper>
                   <br></br>
-                  <Button variant='outlined' color='primary' size='medium'>Sechdule A Call!</Button>
+                  <Button variant='outlined' color='primary' size='medium' className='learnMore-process'>Sechdule A Call!</Button>
                 </AvailableOffer>
               </OffersWrapper>
             </article>
@@ -468,14 +475,9 @@ function App() {
                 1201 West Peachtree Street Atlanta, GA 30309
               
               </Typography>
-
-
             </div>
-
-
           </FooterWrapper>
-        </footer>
-        
+        </footer>  
       </div>
     </Page>
 
