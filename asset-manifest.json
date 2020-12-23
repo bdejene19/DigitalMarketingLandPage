@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/DigitalMarketingLandingPage/static/css/main.262a0604.chunk.css",
+    "main.js": "/DigitalMarketingLandingPage/static/js/main.32b59ad1.chunk.js",
+    "main.js.map": "/DigitalMarketingLandingPage/static/js/main.32b59ad1.chunk.js.map",
+    "runtime-main.js": "/DigitalMarketingLandingPage/static/js/runtime-main.9666cf99.js",
+    "runtime-main.js.map": "/DigitalMarketingLandingPage/static/js/runtime-main.9666cf99.js.map",
+    "static/js/2.1bb8847c.chunk.js": "/DigitalMarketingLandingPage/static/js/2.1bb8847c.chunk.js",
+    "static/js/2.1bb8847c.chunk.js.map": "/DigitalMarketingLandingPage/static/js/2.1bb8847c.chunk.js.map",
+    "static/js/3.a4da500b.chunk.js": "/DigitalMarketingLandingPage/static/js/3.a4da500b.chunk.js",
+    "static/js/3.a4da500b.chunk.js.map": "/DigitalMarketingLandingPage/static/js/3.a4da500b.chunk.js.map",
+    "index.html": "/DigitalMarketingLandingPage/index.html",
+    "static/css/main.262a0604.chunk.css.map": "/DigitalMarketingLandingPage/static/css/main.262a0604.chunk.css.map",
+    "static/js/2.1bb8847c.chunk.js.LICENSE.txt": "/DigitalMarketingLandingPage/static/js/2.1bb8847c.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9666cf99.js",
+    "static/js/2.1bb8847c.chunk.js",
+    "static/css/main.262a0604.chunk.css",
+    "static/js/main.32b59ad1.chunk.js"
+  ]
+}
