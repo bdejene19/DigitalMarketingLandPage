@@ -37,6 +37,7 @@ export const HomePageWrapper = styled.div`
 
     .sidepanel {
         display: none;
+        border: solid green 10px;
     }
 
     @media screen and  (${device.laptop}) {

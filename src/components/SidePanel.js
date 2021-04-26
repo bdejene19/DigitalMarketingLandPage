@@ -2,7 +2,12 @@
 import React from 'react'
 
 function openNav() {
-    document.getElementById("mySidepanel").style.width = "250px";
+    document.getElementById("mySidepanel").style.cssText = `
+        width: 30vw;
+        transition: 0.5s ease;
+    
+    `;
+
   }
   
  
