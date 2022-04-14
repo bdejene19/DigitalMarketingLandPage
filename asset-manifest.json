@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/DigitalMarketingLandPage/static/css/main.e13843db.chunk.css",
-    "main.js": "/DigitalMarketingLandPage/static/js/main.f8e0a57c.chunk.js",
-    "main.js.map": "/DigitalMarketingLandPage/static/js/main.f8e0a57c.chunk.js.map",
+    "main.js": "/DigitalMarketingLandPage/static/js/main.2b45ecc8.chunk.js",
+    "main.js.map": "/DigitalMarketingLandPage/static/js/main.2b45ecc8.chunk.js.map",
     "runtime-main.js": "/DigitalMarketingLandPage/static/js/runtime-main.dd5caced.js",
     "runtime-main.js.map": "/DigitalMarketingLandPage/static/js/runtime-main.dd5caced.js.map",
     "static/js/2.2ccb665f.chunk.js": "/DigitalMarketingLandPage/static/js/2.2ccb665f.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.dd5caced.js",
     "static/js/2.2ccb665f.chunk.js",
     "static/css/main.e13843db.chunk.css",
-    "static/js/main.f8e0a57c.chunk.js"
+    "static/js/main.2b45ecc8.chunk.js"
   ]
 }
